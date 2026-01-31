@@ -1,61 +1,68 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,100:00d4ff&height=200&section=header&text=Uzmaparveen%20Kadampur&fontSize=38&fontColor=ffffff&animation=fadeIn" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:000000,100:1a1a1a&height=120&section=header&text=Uzmaparveen%20Kadampur&fontSize=32&fontColor=ffffff" />
 </p>
 
 <h3 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=2500&pause=900&color=00D4FF&center=true&vCenter=true&width=900&lines=Software+Engineer;Software+Tester;Automation+Testing+Engineer;Building+Reliable+Software" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=FFFFFF&center=true&vCenter=true&width=850&lines=Software+Engineer;Software+Tester;Entry-Level+Professional;Learning+and+Building+Quality+Software" />
 </h3>
 
 ---
 
-## 👩‍💻 Professional Summary
-- Entry-level *Software Engineer* with strong foundations in *programming and testing*
-- Experienced in *manual & automation testing* of real-world applications
-- Focused on *software quality, logic, and system reliability*
-- Interested in *QA, Automation, and Backend-oriented roles*
+## 👩‍💻 About Me
+- Fresher *Software Engineer & Software Tester*
+- Interested in *software development and quality assurance*
+- Experience with *programming, manual testing, and automation basics*
+- Passionate about *learning, problem-solving, and delivering reliable software*
 
 ---
 
-## 🧠 Core Skills (Engineering-Focused)
+## 🧠 Technical Skills
 
-### 💻 Programming & Engineering
+### 💻 Software Engineering
 <p>
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/SQL-003B57?style=for-the-badge&logo=postgresql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Java-black?style=for-the-badge&logo=java&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Python-black?style=for-the-badge&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/SQL-black?style=for-the-badge&logo=mysql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/HTML-black?style=for-the-badge&logo=mysql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CSS-black?style=for-the-badge&logo=mysql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Javascript-black?style=for-the-badge&logo=mysql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/React-black?style=for-the-badge&logo=mysql&logoColor=white"/>
 </p>
 
-### 🧪 Software Testing & QA
+### 🧪 Software Testing
 <p>
-  <img src="https://img.shields.io/badge/Manual%20Testing-black?style=for-the-badge&logo=testinglibrary&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white"/>
-  <img src="https://img.shields.io/badge/TestNG-FF6F00?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/JUnit-25A162?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Manual%20Testing-black?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Selenium-black?style=for-the-badge&logo=selenium&logoColor=white"/>
+  <img src="https://img.shields.io/badge/TestNG-black?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/JUnit-black?style=for-the-badge"/>
 </p>
 
-### ⚙️ Tools & Practices
+### ⚙️ Tools & Concepts
 <p>
-  <img src="https://img.shields.io/badge/Git-black?style=for-the-badge&logo=git"/>
-  <img src="https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github"/>
-  <img src="https://img.shields.io/badge/SDLC%20%26%20STLC-4B0082?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Git-black?style=for-the-badge&logo=git&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github&logoColor=white"/>
+  <img src="https://img.shields.io/badge/SDLC%20%26%20STLC-black?style=for-the-badge"/>
 </p>
 
 ---
 
-## 📊 Skill Proficiency (Engineering & Testing)
+## 💻 Software Engineering Projects
 
-<p align="center">
-  <img src="https://quickchart.io/chart?c={type:'radar',data:{labels:['Java','Python','SQL','Selenium','Manual Testing'],datasets:[{label:'Skill Level',data:[80,75,70,75,85],backgroundColor:'rgba(0,212,255,0.25)',borderColor:'#00d4ff'}]},options:{plugins:{legend:{labels:{color:'white'}}},scales:{r:{angleLines:{color:'#555'},grid:{color:'#444'},pointLabels:{color:'white'},ticks:{color:'white'}}}}" />
-</p>
+### 🔹 Task Focus Application
+- Task management application for organizing daily activities
+- Implemented basic application logic and validations
+- Focused on clean structure and functionality
+
+🔗 https://github.com/uzmakadampur/task-focus
 
 ---
 
 ## 🧪 Software Testing Projects
 
-### 🔹 DemoQA Automation Framework
-- Built automation framework for DemoQA application
-- Validated UI components, alerts, forms, and widgets
-- Designed reusable test cases and reports
+### 🔹 DemoQA Automation Testing
+- Automated testing of DemoQA web application
+- Tested forms, alerts, buttons, and UI components
+- Designed and executed automation test cases
 
 *Tools:* Java, Selenium, TestNG  
 🔗 https://github.com/uzmakadampur/demoqa
@@ -63,37 +70,18 @@
 ---
 
 ### 🔹 OpenCart Web Application Testing
-- Performed end-to-end testing on OpenCart e-commerce system
-- Covered authentication, product flow, cart, and checkout
-- Logged defects and prepared test documentation
+- Manual and automation testing of OpenCart e-commerce application
+- Tested login, product search, cart, and checkout features
+- Prepared test cases and defect reports
 
 *Tools:* Java, Selenium, Manual Testing  
 🔗 https://github.com/uzmakadampur/opencart-web-application
 
 ---
 
-## 💻 Software Engineering Projects
-
-### 🔹 Task Focus Application
-- Designed logic for task management system
-- Implemented CRUD operations and validations
-
-🔗 https://github.com/uzmakadampur/task-focus
-
----
-
-## 📈 GitHub Activity
-
+## 📈 GitHub Stats
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=uzmakadampur&show_icons=true&theme=radical" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=uzmakadampur&theme=radical" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=uzmakadampur&theme=react-dark" />
+  <img src="https://github-readme-stats.vercel.app/api?username=uzmakadampur&show_icons=true&theme=dark" />
 </p>
 
 ---
@@ -106,5 +94,5 @@
 ---
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00d4ff,100:0f2027&height=120&section=footer" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a1a1a,100:000000&height=80&section=footer" />
 </p>
