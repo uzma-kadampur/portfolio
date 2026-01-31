@@ -2,91 +2,121 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Uzmaparveen Kadampur | Portfolio</title>
+<title>Uzmaparveen Kadampur | Software Engineer</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Professional Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
+  font-family:"Segoe UI", sans-serif;
 }
 
 body{
-  font-family: "Segoe UI", sans-serif;
-  background:#0b0b0f;
+  background:#0a0a0f;
   color:#eaeaea;
-  line-height:1.6;
 }
 
 /* ---------- HERO ---------- */
 .hero{
-  text-align:center;
-  padding:80px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:80px 10%;
+  min-height:100vh;
 }
 
-.hero h1{
-  font-size:3rem;
+.hero-text{
+  max-width:55%;
 }
 
-.hero h1 span{
+.hero-text h1{
+  font-size:3.2rem;
+}
+
+.hero-text h1 span{
   color:#00ffd5;
 }
 
-.hero p{
-  margin-top:10px;
-  color:#b5b5b5;
+.hero-text p{
+  margin-top:15px;
+  color:#bcbcbc;
+  font-size:1.1rem;
 }
 
-/* Laptop animation */
-.laptop{
-  margin:40px auto;
-  width:160px;
-  height:100px;
-  border:4px solid #00ffd5;
-  border-radius:6px;
+/* ---------- ANIMATED PERSON ---------- */
+.person{
   position:relative;
+  width:180px;
+  height:260px;
   animation: float 3s ease-in-out infinite;
-}
-
-.laptop::after{
-  content:"";
-  position:absolute;
-  bottom:-20px;
-  left:-20px;
-  width:200px;
-  height:12px;
-  background:#00ffd5;
-  border-radius:4px;
 }
 
 @keyframes float{
   0%,100%{ transform:translateY(0); }
-  50%{ transform:translateY(-10px); }
+  50%{ transform:translateY(-12px); }
+}
+
+.head{
+  width:50px;
+  height:50px;
+  background:#00ffd5;
+  border-radius:50%;
+  margin:0 auto;
+}
+
+.body{
+  width:60px;
+  height:80px;
+  background:#1c1c25;
+  margin:5px auto;
+  border-radius:10px;
+}
+
+.table{
+  width:160px;
+  height:12px;
+  background:#444;
+  margin:25px auto 0;
+  border-radius:6px;
+}
+
+.laptop{
+  width:90px;
+  height:55px;
+  border:3px solid #00ffd5;
+  margin:-50px auto 0;
+  border-radius:6px;
 }
 
 /* ---------- SECTION ---------- */
 section{
-  max-width:1000px;
-  margin:auto;
-  padding:50px 20px;
+  padding:70px 10%;
 }
 
 h2{
-  text-align:center;
-  margin-bottom:30px;
   color:#00ffd5;
+  margin-bottom:30px;
+  border-left:4px solid #00ffd5;
+  padding-left:12px;
 }
 
 /* ---------- ABOUT ---------- */
 .about{
-  background:#111118;
-  padding:30px;
-  border-radius:12px;
-  text-align:center;
+  background:#13131c;
+  padding:25px;
+  border-radius:14px;
 }
 
 /* ---------- SKILLS ---------- */
+.skills-group{
+  margin-bottom:40px;
+}
+
 .skills{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
@@ -94,26 +124,23 @@ h2{
 }
 
 .skill-card{
-  background:#14141d;
+  background:#15151f;
   padding:20px;
-  border-radius:12px;
+  border-radius:14px;
   text-align:center;
-  border:1px solid #222;
   transition:0.3s;
+  border:1px solid #222;
 }
 
 .skill-card:hover{
+  box-shadow:0 0 20px rgba(0,255,213,0.5);
   transform:translateY(-6px);
-  box-shadow:0 0 15px #00ffd5;
 }
 
-.skill-card span{
-  font-size:2rem;
-}
-
-.skill-card h3{
-  margin-top:10px;
+.skill-card i{
+  font-size:2.4rem;
   color:#00ffd5;
+  margin-bottom:10px;
 }
 
 /* ---------- PROJECTS ---------- */
@@ -124,9 +151,9 @@ h2{
 }
 
 .project{
-  background:#14141d;
+  background:#15151f;
   padding:25px;
-  border-radius:12px;
+  border-radius:16px;
   border:1px solid #222;
 }
 
@@ -135,24 +162,24 @@ h2{
 }
 
 .project p{
+  margin:12px 0;
   font-size:0.95rem;
-  margin:10px 0;
 }
 
 .project a{
   display:inline-block;
-  margin-top:10px;
-  padding:10px 18px;
+  padding:12px 22px;
+  border-radius:30px;
   background:#00ffd5;
   color:#000;
-  text-decoration:none;
-  border-radius:20px;
   font-weight:600;
+  text-decoration:none;
   transition:0.3s;
 }
 
 .project a:hover{
   background:#ffcf00;
+  box-shadow:0 0 25px rgba(255,207,0,0.8);
 }
 
 /* ---------- FOOTER ---------- */
@@ -168,44 +195,49 @@ footer{
 
 <!-- HERO -->
 <div class="hero">
-  <h1>Uzmaparveen <span>Kadampur</span></h1>
-  <p>Software Engineer • Software Tester • Fresher</p>
+  <div class="hero-text">
+    <h1>Uzmaparveen <span>Kadampur</span></h1>
+    <p>Software Engineer • Software Tester • Fresher</p>
+  </div>
 
-  <div class="laptop"></div>
+  <div class="person">
+    <div class="head"></div>
+    <div class="body"></div>
+    <div class="laptop"></div>
+    <div class="table"></div>
+  </div>
 </div>
 
 <!-- ABOUT -->
 <section>
   <h2>About Me</h2>
   <div class="about">
-    I am a fresher Software Engineer and Software Tester with interest in development,
-    automation testing, and building reliable software.
+    I am a fresher Software Engineer and Software Tester with a strong interest in
+    developing and testing reliable software applications. I have hands-on experience
+    with programming, manual testing, and basic automation, and I am eager to grow
+    in real-world projects.
   </div>
 </section>
 
 <!-- SKILLS -->
 <section>
   <h2>Technical Skills</h2>
-  <div class="skills">
-    <div class="skill-card">
-      <span>☕</span>
-      <h3>Java</h3>
+
+  <div class="skills-group">
+    <h3 style="color:#ffcf00;margin-bottom:15px;">Software Engineering</h3>
+    <div class="skills">
+      <div class="skill-card"><i class="fa-brands fa-java"></i><p>Java</p></div>
+      <div class="skill-card"><i class="fa-brands fa-python"></i><p>Python</p></div>
+      <div class="skill-card"><i class="fa-solid fa-database"></i><p>SQL</p></div>
     </div>
-    <div class="skill-card">
-      <span>🐍</span>
-      <h3>Python</h3>
-    </div>
-    <div class="skill-card">
-      <span>🗄️</span>
-      <h3>SQL</h3>
-    </div>
-    <div class="skill-card">
-      <span>🧪</span>
-      <h3>Manual Testing</h3>
-    </div>
-    <div class="skill-card">
-      <span>🤖</span>
-      <h3>Selenium</h3>
+  </div>
+
+  <div class="skills-group">
+    <h3 style="color:#ffcf00;margin-bottom:15px;">Software Testing</h3>
+    <div class="skills">
+      <div class="skill-card"><i class="fa-solid fa-vial"></i><p>Manual Testing</p></div>
+      <div class="skill-card"><i class="fa-solid fa-clipboard-check"></i><p>Test Cases</p></div>
+      <div class="skill-card"><i class="fa-solid fa-robot"></i><p>Selenium</p></div>
     </div>
   </div>
 </section>
@@ -216,22 +248,22 @@ footer{
   <div class="projects">
 
     <div class="project">
-      <h3>Task Focus</h3>
-      <p>Productivity task management application built to improve focus and organization.</p>
-      <a href="#" target="_blank">View Project</a>
+      <h3>Task Focus Application</h3>
+      <p>Task management application focusing on productivity and clean logic.</p>
+      <a href="https://github.com/uzmakadampur/task-focus" target="_blank">View Project</a>
     </div>
 
     <div class="project">
       <h3>DemoQA Testing</h3>
       <p>Manual and automation testing of DemoQA forms, alerts, and UI components.</p>
-      <a href="#" target="_blank">View Project</a>
+      <a href="https://github.com/uzmakadampur/demoqa" target="_blank">View Project</a>
     </div>
 
     <div class="project">
       <h3>OpenCart Web Application Testing</h3>
-      <p>Tested login, product search, cart, and checkout features using manual and Selenium testing.</p>
+      <p>End-to-end testing of e-commerce features using manual and Selenium testing.</p>
       <a href="https://github.com/uzmakadampur/opencart-web-application" target="_blank">
-        View on GitHub
+        View Project
       </a>
     </div>
 
