@@ -2,70 +2,133 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Uzmaparveen Kadampur | Portfolio</title>
-  <link rel="stylesheet" href="style.css">  <!-- Link CSS -->
-  <script src="script.js" defer></script>   <!-- Optional JS -->
+  <title>Uzmaparveen Kadampur | Software Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+    }
+
+    section {
+      padding: 60px 10%;
+      animation: fadeUp 1.2s ease;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    h1 span {
+      color: #00ffd5;
+    }
+
+    .typing {
+      text-align: center;
+      font-size: 20px;
+      color: #aaa;
+      margin-top: 10px;
+    }
+
+    .card {
+      background: #111;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px 0;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    ul li {
+      margin: 8px 0;
+    }
+
+    a {
+      color: #00ffd5;
+      text-decoration: none;
+    }
+
+    @keyframes fadeUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
 </head>
+
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <h1>Hi 👋 I’m Uzmaparveen Kadampur</h1>
-    <p>Entry-Level Software Engineer | Software Tester</p>
-  </header>
+<section>
+  <h1>Uzmaparveen <span>Kadampur</span></h1>
+  <div class="typing">
+    Software Engineer • Software Tester • Fresher
+  </div>
+</section>
 
-  <!-- ABOUT ME -->
-  <section>
-    <h2>About Me</h2>
-    <p>I am a Computer Science student interested in software development and testing. I enjoy building applications and ensuring their quality.</p>
-  </section>
-
-  <!-- TECHNICAL SKILLS -->
-  <section>
-    <h2>Technical Skills</h2>
-    <h3>Languages & Frameworks</h3>
-    <!-- Put your badges here -->
-    <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white">
-    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
-    <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white">
-    <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white">
-    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
-    <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black">
-    <img src="https://img.shields.io/badge/SQL-61DAFB?style=for-the-badge&logo=react&logoColor=white">
-
-    <h3>Software Testing</h3>
-    <ul>
-      <li>Manual Testing</li>
-      <li>Test Case Design</li>
-      <li>SDLC & STLC</li>
-      <li>Automation Testing (Selenium)</li>
-    </ul>
-  </section>
-
-  <!-- PROJECTS -->
-  <section>
-    <h2>Projects</h2>
-    <div class="projects">
-      <a href="https://github.com/uzmakadampur/task-focus" target="_blank" class="project-card">
-        <h3>Task Focus App</h3>
-        <p>Productivity web app to track tasks.</p>
-      </a>
-      <a href="https://github.com/uzmakadampur/portfolio" target="_blank" class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>My personal developer portfolio.</p>
-      </a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>📧 Email: <a href="mailto:your-uzmakadampur47@gmail.com" style="color:white;">your-uzmakadampur47@gmail.com</a></p>
-    <p>Connect: 
-      
-      <a href="https://github.com/uzmakadampur" target="_blank" style="color:white;">GitHub</a>
+<section>
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      I am a fresher Software Engineer and Software Tester with interest in
+      development, automation testing, and building reliable software.
     </p>
-    <p>© 2026 Uzmaparveen Kadampur</p>
-  </footer>
+  </div>
+</section>
+
+<section>
+  <h2>Technical Skills</h2>
+
+  <div class="card">
+    <h3>Software Engineering</h3>
+    <p>Java, Python, SQL</p>
+  </div>
+
+  <div class="card">
+    <h3>Software Testing</h3>
+    <p>Manual Testing, Selenium, TestNG, JUnit</p>
+  </div>
+
+  <div class="card">
+    <h3>Tools & Concepts</h3>
+    <p>Git, GitHub, SDLC, STLC</p>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>Task Focus Application</h3>
+    <p>Task management application focusing on clean logic and functionality.</p>
+    <a href="https://github.com/uzmakadampur/task-focus" target="_blank">View Project</a>
+  </div>
+
+  <div class="card">
+    <h3>DemoQA Automation Testing</h3>
+    <p>Automated UI testing using Selenium and TestNG.</p>
+    <a href="https://github.com/uzmakadampur/demoqa" target="_blank">View Project</a>
+  </div>
+
+  <div class="card">
+    <h3>OpenCart Web Application Testing</h3>
+    <p>Manual & automation testing of e-commerce application.</p>
+    <a href="https://github.com/uzmakadampur/opencart-web-application" target="_blank">View Project</a>
+  </div>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: your-email@gmail.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/uzmakadampur">Profile</a></p>
+    <p>GitHub: <a href="https://github.com/uzmakadampur">Profile</a></p>
+  </div>
+</section>
 
 </body>
-</html>
+</html>s
