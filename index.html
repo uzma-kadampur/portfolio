@@ -1,126 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Uzmaparveen Kadampur | Software Engineer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Uzmaparveen Kadampur | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #000;
-      color: #fff;
-    }
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    section {
-      padding: 60px 10%;
-      animation: fadeUp 1.2s ease;
-    }
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #0f2027, #000);
+  color: #ffffff;
+  overflow-x: hidden;
+}
 
-    h1, h2 {
-      text-align: center;
-    }
+/* ===== HERO ===== */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
-    h1 span {
-      color: #00ffd5;
-    }
+.hero h1 {
+  font-size: 3rem;
+  animation: glow 2s infinite alternate;
+}
 
-    .typing {
-      text-align: center;
-      font-size: 20px;
-      color: #aaa;
-      margin-top: 10px;
-    }
+.hero h1 span {
+  background: linear-gradient(90deg, #00ffd5, #8f00ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
 
-    .card {
-      background: #111;
-      padding: 20px;
-      border-radius: 10px;
-      margin: 20px 0;
-      transition: transform 0.3s;
-    }
+.typing {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  border-right: 2px solid #00ffd5;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 4s steps(40,end) forwards, blink 0.7s infinite;
+}
 
-    .card:hover {
-      transform: scale(1.03);
-    }
+@keyframes typing {
+  to { width: 420px; }
+}
 
-    ul li {
-      margin: 8px 0;
-    }
+@keyframes blink {
+  50% { border-color: transparent; }
+}
 
-    a {
-      color: #00ffd5;
-      text-decoration: none;
-    }
+@keyframes glow {
+  from { text-shadow: 0 0 10px #00ffd5; }
+  to { text-shadow: 0 0 25px #8f00ff; }
+}
 
-    @keyframes fadeUp {
-      from {opacity: 0; transform: translateY(30px);}
-      to {opacity: 1; transform: translateY(0);}
-    }
-  </style>
+/* ===== SECTIONS ===== */
+section {
+  padding: 80px 10%;
+  animation: slideUp 1.2s ease;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: #00ffd5;
+}
+
+/* ===== CARDS ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 15px;
+  padding: 25px;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 0 25px rgba(0,255,213,0.4);
+}
+
+/* ===== LINKS ===== */
+a {
+  color: #00ffd5;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #8f00ff;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+</style>
 </head>
 
 <body>
 
-<section>
+<!-- HERO -->
+<div class="hero">
   <h1>Uzmaparveen <span>Kadampur</span></h1>
   <div class="typing">
     Software Engineer • Software Tester • Fresher
   </div>
-</section>
+</div>
 
+<!-- ABOUT -->
 <section>
   <h2>About Me</h2>
   <div class="card">
-    <p>
-      I am a fresher Software Engineer and Software Tester with interest in
-      development, automation testing, and building reliable software.
-    </p>
+    I am a fresher Software Engineer and Software Tester with strong interest in
+    development, automation testing, and building reliable, high-quality software.
   </div>
 </section>
 
+<!-- SKILLS -->
 <section>
   <h2>Technical Skills</h2>
-
-  <div class="card">
-    <h3>Software Engineering</h3>
-    <p>Java, Python, SQL</p>
-  </div>
-
-  <div class="card">
-    <h3>Software Testing</h3>
-    <p>Manual Testing, Selenium, TestNG, JUnit</p>
-  </div>
-
-  <div class="card">
-    <h3>Tools & Concepts</h3>
-    <p>Git, GitHub, SDLC, STLC</p>
+  <div class="grid">
+    <div class="card">
+      <h3>Software Engineering</h3>
+      <p>Java, Python, SQL</p>
+    </div>
+    <div class="card">
+      <h3>Software Testing</h3>
+      <p>Manual Testing, Selenium, TestNG, JUnit</p>
+    </div>
+    <div class="card">
+      <h3>Tools & Concepts</h3>
+      <p>Git, GitHub, SDLC, STLC</p>
+    </div>
   </div>
 </section>
 
+<!-- PROJECTS -->
 <section>
   <h2>Projects</h2>
+  <div class="grid">
 
-  <div class="card">
-    <h3>Task Focus Application</h3>
-    <p>Task management application focusing on clean logic and functionality.</p>
-    <a href="https://github.com/uzmakadampur/task-focus" target="_blank">View Project</a>
-  </div>
+    <div class="card">
+      <h3>Task Focus Application</h3>
+      <p>Task management application with clean logic and validations.</p>
+      <a href="https://github.com/uzmakadampur/task-focus" target="_blank">View Project →</a>
+    </div>
 
-  <div class="card">
-    <h3>DemoQA Automation Testing</h3>
-    <p>Automated UI testing using Selenium and TestNG.</p>
-    <a href="https://github.com/uzmakadampur/demoqa" target="_blank">View Project</a>
-  </div>
+    <div class="card">
+      <h3>DemoQA Automation Testing</h3>
+      <p>Automated UI test cases using Selenium & TestNG.</p>
+      <a href="https://github.com/uzmakadampur/demoqa" target="_blank">View Project →</a>
+    </div>
 
-  <div class="card">
-    <h3>OpenCart Web Application Testing</h3>
-    <p>Manual & automation testing of e-commerce application.</p>
-    <a href="https://github.com/uzmakadampur/opencart-web-application" target="_blank">View Project</a>
+    <div class="card">
+      <h3>OpenCart Web Application Testing</h3>
+      <p>Manual & automation testing of e-commerce platform.</p>
+      <a href="https://github.com/uzmakadampur/opencart-web-application" target="_blank">View Project →</a>
+    </div>
+
   </div>
 </section>
 
+<!-- CONTACT -->
 <section>
   <h2>Contact</h2>
   <div class="card">
@@ -130,5 +195,9 @@
   </div>
 </section>
 
+<footer>
+  © 2026 Uzmaparveen Kadampur
+</footer>
+
 </body>
-</html>s
+</html>
