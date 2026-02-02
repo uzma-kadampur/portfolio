@@ -5,44 +5,72 @@
 <title>Uzmaparveen Kadampur | Software Tester</title>
 
 <style>
-/* ========== GLOBAL ========== */
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:"Segoe UI",sans-serif;
-}
-
 body{
-  background:radial-gradient(circle at top,#1b2735,#090a0f);
-  color:#fff;
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#0b0f1a;
+  color:#eaeaea;
 }
 
-/* ========== HERO ========== */
+/* HEADER */
 header{
-  min-height:100vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
   text-align:center;
-  animation:fadeIn 1.5s ease;
+  padding:60px 20px 20px;
 }
 
-header h1 span{
-  background:linear-gradient(90deg,#00ffd5,#00b3ff);
-  -webkit-background-clip:text;
-  color:transparent;
+header h1{
+  font-size:38px;
+}
+
+header span{
+  color:#00ffd5;
 }
 
 header p{
-  margin-top:12px;
-  opacity:.85;
+  color:#b5b5b5;
+  margin-top:8px;
 }
 
-/* ========== SECTION ========== */
+/* ANIMATION */
+.testing-animation{
+  margin:30px auto 60px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.scanner{
+  width:140px;
+  height:90px;
+  border:2px solid #00ffd5;
+  position:relative;
+  overflow:hidden;
+  border-radius:8px;
+}
+
+.scan-line{
+  position:absolute;
+  width:100%;
+  height:4px;
+  background:#00ffd5;
+  animation:scan 2s infinite;
+}
+
+@keyframes scan{
+  0%{top:0;}
+  50%{top:86px;}
+  100%{top:0;}
+}
+
+.testing-animation p{
+  margin-top:12px;
+  color:#00ffd5;
+  letter-spacing:1px;
+}
+
+/* SECTION */
 section{
-  padding:80px 10%;
+  padding:60px 8%;
 }
 
 h2{
@@ -51,152 +79,148 @@ h2{
   margin-bottom:40px;
 }
 
-/* ========== CARDS ========== */
-.container{
+/* SKILLS */
+.skills{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:30px;
+  gap:25px;
 }
 
 .card{
-  background:rgba(255,255,255,0.08);
-  padding:35px;
-  border-radius:18px;
-  text-align:center;
-  transition:.4s;
-  position:relative;
-}
-
-.card:hover{
-  transform:translateY(-12px) scale(1.05);
-  box-shadow:0 0 25px rgba(0,255,213,.4);
+  background:#131a2a;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 0 15px rgba(0,255,213,.1);
 }
 
 .card h3{
   color:#00ffd5;
-  margin-bottom:18px;
+  margin-bottom:15px;
 }
 
-/* ========== BUTTON ========== */
-.card a{
-  display:inline-block;
-  padding:12px 24px;
-  border-radius:30px;
-  border:1px solid #00ffd5;
+.card ul{
+  padding-left:18px;
+}
+
+.card li{
+  margin-bottom:8px;
+  color:#d5d5d5;
+}
+
+/* PROJECTS */
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:30px;
+}
+
+.project-card{
+  background:#131a2a;
+  padding:30px;
+  border-radius:18px;
+  text-align:center;
+}
+
+.project-card h3{
   color:#00ffd5;
+  margin-bottom:20px;
+}
+
+.project-card a{
+  padding:10px 22px;
+  border:1px solid #00ffd5;
+  border-radius:25px;
   text-decoration:none;
+  color:#00ffd5;
   transition:.4s;
 }
 
-.card a:hover{
+.project-card a:hover{
   background:#00ffd5;
   color:#000;
   box-shadow:0 0 15px #00ffd5;
-}
-
-/* ========== TOOLS ========== */
-.tools{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:15px;
-}
-
-.tools span{
-  padding:12px 22px;
-  border-radius:25px;
-  background:linear-gradient(135deg,#00ffd5,#00b3ff);
-  color:#000;
-  font-weight:600;
-  transition:.4s;
-}
-
-.tools span:hover{
-  transform:scale(1.15);
-  box-shadow:0 0 15px #00ffd5;
-}
-
-/* ========== FOOTER ========== */
-footer{
-  text-align:center;
-  padding:25px;
-  opacity:.7;
-}
-
-/* ========== ANIMATION ========== */
-@keyframes fadeIn{
-  from{opacity:0;transform:translateY(30px);}
-  to{opacity:1;transform:translateY(0);}
 }
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
 <header>
   <h1>Hi 👋 I’m <span>Uzmaparveen Kadampur</span></h1>
-  <p>Aspiring <b>Software Tester</b><br>
-     Manual Testing & Selenium Automation</p>
+  <p>Aspiring Software Tester | Manual Testing & Selenium Automation</p>
 </header>
+
+<!-- ANIMATION -->
+<div class="testing-animation">
+  <div class="scanner">
+    <div class="scan-line"></div>
+  </div>
+  <p>Testing in Progress...</p>
+</div>
 
 <!-- SKILLS -->
 <section>
-<h2>🧪 Software Testing Skills</h2>
-<div class="container">
+  <h2>🧪 Software Testing Skills</h2>
 
-  <div class="card">
-    <h3>Manual Testing</h3>
+  <div class="skills">
+
+    <div class="card">
+      <h3>Manual Testing</h3>
+      <ul>
+        <li>Understanding of SDLC & STLC</li>
+        <li>Test case creation & execution</li>
+        <li>Functional, Regression & Smoke testing</li>
+        <li>Bug reporting & tracking</li>
+        <li>Test summary reports</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Automation Testing (Selenium)</h3>
+      <ul>
+        <li>Selenium WebDriver with Java</li>
+        <li>TestNG framework</li>
+        <li>Locators & waits</li>
+        <li>Automation execution & reports</li>
+        <li>Basic framework understanding</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Test Design Techniques</h3>
+      <ul>
+        <li>Equivalence Partitioning</li>
+        <li>Boundary Value Analysis</li>
+        <li>Decision Table Testing</li>
+        <li>Use Case based testing</li>
+      </ul>
+    </div>
+
   </div>
-
-  <div class="card">
-    <h3>Automation Testing (Selenium)</h3>
-  </div>
-
-  <div class="card">
-    <h3>Test Design Techniques</h3>
-  </div>
-
-</div>
 </section>
 
 <!-- PROJECTS -->
 <section>
-<h2>📂 Testing Projects</h2>
-<div class="container">
+  <h2>📂 Testing Projects</h2>
 
-  <div class="card">
-    <h3>Manual Testing – E-Commerce Website</h3>
-    <a href="https://github.com/uzma-kadampur/manual-testing-ecommerce" target="_blank">
-      View Project →
-    </a>
+  <div class="projects">
+
+    <div class="project-card">
+      <h3>DemoQA – Testing</h3>
+      <a href="https://github.com/uzma-kadampur/demoqa-testing" target="_blank">
+        View Project →
+      </a>
+    </div>
+
+    <div class="project-card">
+      <h3>OpenCart – Web Application Testing</h3>
+      <a href="https://github.com/uzma-kadampur/opencart-testing" target="_blank">
+        View Project →
+      </a>
+    </div>
+
   </div>
-
-  <div class="card">
-    <h3>Selenium Automation – Login Module</h3>
-    <a href="https://github.com/uzma-kadampur/selenium-automation-login" target="_blank">
-      View Project →
-    </a>
-  </div>
-
-</div>
 </section>
-
-<!-- TOOLS -->
-<section>
-<h2>⚙️ Tools & Technologies</h2>
-<div class="tools">
-  <span>Java</span>
-  <span>Selenium</span>
-  <span>TestNG</span>
-  <span>SQL</span>
-  <span>GitHub</span>
-</div>
-</section>
-
-<footer>
-© 2026 Uzmaparveen Kadampur | Software Testing Portfolio
-</footer>
 
 </body>
 </html>
