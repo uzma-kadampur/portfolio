@@ -6,172 +6,127 @@
 
 <style>
 /* ========== GLOBAL ========== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Segoe UI",sans-serif;
 }
 
-body {
-  background: radial-gradient(circle at top, #1b2735, #090a0f);
-  color: #ffffff;
-  overflow-x: hidden;
+body{
+  background:radial-gradient(circle at top,#1b2735,#090a0f);
+  color:#fff;
 }
 
 /* ========== HERO ========== */
-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  animation: fadeIn 1.8s ease;
+header{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  animation:fadeIn 1.5s ease;
 }
 
-header h1 {
-  font-size: 2.8rem;
+header h1 span{
+  background:linear-gradient(90deg,#00ffd5,#00b3ff);
+  -webkit-background-clip:text;
+  color:transparent;
 }
 
-header span {
-  background: linear-gradient(90deg, #00ffd5, #00b3ff);
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-header p {
-  margin-top: 15px;
-  font-size: 1.1rem;
-  opacity: 0.85;
-}
-
-/* floating glow */
-header::after {
-  content: "";
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  background: #00ffd5;
-  filter: blur(120px);
-  opacity: 0.2;
-  animation: float 6s infinite alternate;
+header p{
+  margin-top:12px;
+  opacity:.85;
 }
 
 /* ========== SECTION ========== */
-section {
-  padding: 80px 10%;
+section{
+  padding:80px 10%;
 }
 
-section h2 {
-  text-align: center;
-  margin-bottom: 50px;
-  font-size: 2rem;
-  color: #00ffd5;
+h2{
+  text-align:center;
+  color:#00ffd5;
+  margin-bottom:40px;
 }
 
 /* ========== CARDS ========== */
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
+.container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
 }
 
-.card {
-  background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
-  padding: 30px;
-  border-radius: 18px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  transition: 0.5s;
+.card{
+  background:rgba(255,255,255,0.08);
+  padding:35px;
+  border-radius:18px;
+  text-align:center;
+  transition:.4s;
+  position:relative;
 }
 
-.card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(120deg, transparent, rgba(0,255,213,0.4), transparent);
-  opacity: 0;
-  transition: 0.5s;
+.card:hover{
+  transform:translateY(-12px) scale(1.05);
+  box-shadow:0 0 25px rgba(0,255,213,.4);
 }
 
-.card:hover::before {
-  opacity: 1;
+.card h3{
+  color:#00ffd5;
+  margin-bottom:18px;
 }
 
-.card:hover {
-  transform: translateY(-15px) scale(1.04);
-  box-shadow: 0 0 30px rgba(0,255,213,0.4);
+/* ========== BUTTON ========== */
+.card a{
+  display:inline-block;
+  padding:12px 24px;
+  border-radius:30px;
+  border:1px solid #00ffd5;
+  color:#00ffd5;
+  text-decoration:none;
+  transition:.4s;
 }
 
-.card h3 {
-  color: #00ffd5;
-  margin-bottom: 15px;
-}
-
-.card p {
-  font-size: 0.95rem;
-  opacity: 0.9;
-  line-height: 1.6;
-}
-
-/* ========== PROJECT LINKS ========== */
-.card a {
-  display: inline-block;
-  margin-top: 18px;
-  padding: 10px 20px;
-  border-radius: 25px;
-  border: 1px solid #00ffd5;
-  color: #00ffd5;
-  text-decoration: none;
-  transition: 0.4s;
-}
-
-.card a:hover {
-  background: #00ffd5;
-  color: #000;
-  box-shadow: 0 0 15px #00ffd5;
+.card a:hover{
+  background:#00ffd5;
+  color:#000;
+  box-shadow:0 0 15px #00ffd5;
 }
 
 /* ========== TOOLS ========== */
-.tools {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 18px;
+.tools{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:15px;
 }
 
-.tools span {
-  padding: 12px 22px;
-  border-radius: 30px;
-  background: linear-gradient(135deg, #00ffd5, #00b3ff);
-  color: #000;
-  font-weight: bold;
-  transition: 0.4s;
+.tools span{
+  padding:12px 22px;
+  border-radius:25px;
+  background:linear-gradient(135deg,#00ffd5,#00b3ff);
+  color:#000;
+  font-weight:600;
+  transition:.4s;
 }
 
-.tools span:hover {
-  transform: scale(1.15) rotate(-2deg);
-  box-shadow: 0 0 20px #00ffd5;
+.tools span:hover{
+  transform:scale(1.15);
+  box-shadow:0 0 15px #00ffd5;
 }
 
 /* ========== FOOTER ========== */
-footer {
-  text-align: center;
-  padding: 25px;
-  opacity: 0.7;
+footer{
+  text-align:center;
+  padding:25px;
+  opacity:.7;
 }
 
-/* ========== ANIMATIONS ========== */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes float {
-  from { transform: translateY(0); }
-  to { transform: translateY(40px); }
+/* ========== ANIMATION ========== */
+@keyframes fadeIn{
+  from{opacity:0;transform:translateY(30px);}
+  to{opacity:1;transform:translateY(0);}
 }
 </style>
 </head>
@@ -182,93 +137,65 @@ footer {
 <header>
   <h1>Hi 👋 I’m <span>Uzmaparveen Kadampur</span></h1>
   <p>Aspiring <b>Software Tester</b><br>
-     Skilled in Manual Testing & Selenium Automation</p>
+     Manual Testing & Selenium Automation</p>
 </header>
 
 <!-- SKILLS -->
 <section>
-  <h2>🧪 Software Testing Skills</h2>
-  <div class="container">
+<h2>🧪 Software Testing Skills</h2>
+<div class="container">
 
-    <div class="card">
-      <h3>Manual Testing</h3>
-      <p>
-        Requirement Analysis<br>
-        Test Scenarios & Test Cases<br>
-        Smoke, Sanity & Regression Testing<br>
-        Bug Reporting & Tracking
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Automation Testing</h3>
-      <p>
-        Selenium WebDriver<br>
-        Java + Selenium<br>
-        XPath & Locators<br>
-        TestNG Framework
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Test Design</h3>
-      <p>
-        Boundary Value Analysis<br>
-        Equivalence Partitioning<br>
-        Positive & Negative Testing<br>
-        RTM
-      </p>
-    </div>
-
+  <div class="card">
+    <h3>Manual Testing</h3>
   </div>
+
+  <div class="card">
+    <h3>Automation Testing (Selenium)</h3>
+  </div>
+
+  <div class="card">
+    <h3>Test Design Techniques</h3>
+  </div>
+
+</div>
 </section>
 
 <!-- PROJECTS -->
 <section>
-  <h2>📂 Testing Projects</h2>
-  <div class="container">
+<h2>📂 Testing Projects</h2>
+<div class="container">
 
-    <div class="card">
-      <h3>Manual Testing – E-Commerce Website</h3>
-      <p>
-        End-to-end functional testing<br>
-        Test cases & bug reports<br>
-        Regression testing<br>
-        Test summary documentation
-      </p>
-      <a href="#">View Project</a>
-    </div>
-
-    <div class="card">
-      <h3>Selenium Automation – Login Module</h3>
-      <p>
-        Automated login scenarios<br>
-        Selenium + Java<br>
-        TestNG execution<br>
-        Automation reports
-      </p>
-      <a href="#">View Project</a>
-    </div>
-
+  <div class="card">
+    <h3>Manual Testing – E-Commerce Website</h3>
+    <a href="https://github.com/uzma-kadampur/manual-testing-ecommerce" target="_blank">
+      View Project →
+    </a>
   </div>
+
+  <div class="card">
+    <h3>Selenium Automation – Login Module</h3>
+    <a href="https://github.com/uzma-kadampur/selenium-automation-login" target="_blank">
+      View Project →
+    </a>
+  </div>
+
+</div>
 </section>
 
 <!-- TOOLS -->
 <section>
-  <h2>⚙️ Tools & Technologies</h2>
-  <div class="tools">
-    <span>Java</span>
-    <span>Selenium</span>
-    <span>TestNG</span>
-    <span>SQL</span>
-    <span>JIRA</span>
-    <span>GitHub</span>
-    <span>Postman</span>
-  </div>
+<h2>⚙️ Tools & Technologies</h2>
+<div class="tools">
+  <span>Java</span>
+  <span>Selenium</span>
+  <span>TestNG</span>
+  <span>SQL</span>
+  <span>GitHub</span>
+</div>
 </section>
 
 <footer>
-  © 2026 Uzmaparveen Kadampur | Software Testing Portfolio
+© 2026 Uzmaparveen Kadampur | Software Testing Portfolio
 </footer>
 
 </body>
