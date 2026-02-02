@@ -1,291 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Uzmaparveen Kadampur | Software Engineer</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-<style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family: "Segoe UI", sans-serif;
-}
-
-body{
-  background:#0b0b12;
-  color:#eaeaea;
-  line-height:1.6;
-}
-
-/* ---------- GLOBAL ---------- */
-section{
-  padding:70px 10%;
-}
-
-h1,h2,h3{
-  font-weight:600;
-}
-
-h2{
-  color:#00f5d4;
-  margin-bottom:35px;
-  position:relative;
-}
-
-h2::after{
-  content:"";
-  width:60px;
-  height:3px;
-  background:#00f5d4;
-  position:absolute;
-  left:0;
-  bottom:-10px;
-}
-
-/* ---------- HERO ---------- */
-.hero{
-  min-height:100vh;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-.hero-text{
-  max-width:55%;
-  animation: fadeIn 1.2s ease;
-}
-
-.hero-text h1{
-  font-size:3.3rem;
-}
-
-.hero-text span{
-  color:#00f5d4;
-}
-
-.hero-text p{
-  margin-top:15px;
-  font-size:1.1rem;
-  color:#bdbdbd;
-}
-
-/* subtle animation */
-@keyframes fadeIn{
-  from{opacity:0; transform:translateY(20px);}
-  to{opacity:1; transform:translateY(0);}
-}
-
-/* ---------- ANIMATED DEVELOPER ---------- */
-.dev{
-  width:200px;
-  animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float{
-  0%,100%{transform:translateY(0);}
-  50%{transform:translateY(-12px);}
-}
-
-.head{
-  width:55px;
-  height:55px;
-  background:#00f5d4;
-  border-radius:50%;
-  margin:0 auto;
-}
-
-.body{
-  width:70px;
-  height:90px;
-  background:#1c1c26;
-  border-radius:12px;
-  margin:6px auto;
-}
-
-.laptop{
-  width:100px;
-  height:60px;
-  border:3px solid #00f5d4;
-  border-radius:6px;
-  margin:-35px auto 0;
-}
-
-.table{
-  width:180px;
-  height:10px;
-  background:#444;
-  margin:25px auto 0;
-  border-radius:5px;
-}
-
-/* ---------- ABOUT ---------- */
-.about{
-  background:#151520;
-  padding:30px;
-  border-radius:16px;
-  animation: fadeIn 1.5s ease;
-}
-
-/* ---------- SKILLS ---------- */
-.skill-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-  gap:22px;
-}
-
-.skill{
-  background:#151520;
-  padding:25px;
-  border-radius:16px;
-  text-align:center;
-  border:1px solid #222;
-  transition:0.3s;
-}
-
-.skill i{
-  font-size:2.4rem;
-  color:#00f5d4;
-  margin-bottom:12px;
-}
-
-.skill:hover{
-  transform:translateY(-8px);
-  box-shadow:0 0 25px rgba(0,245,212,0.6);
-}
-
-/* ---------- PROJECTS ---------- */
-.projects{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:28px;
-}
-
-.project{
-  background:#151520;
-  padding:28px;
-  border-radius:18px;
-  border:1px solid #222;
-}
-
-.project h3{
-  color:#ffd60a;
-}
-
-.project p{
-  margin:14px 0;
-  font-size:0.95rem;
-  color:#cfcfcf;
-}
-
-.project a{
-  display:inline-block;
-  padding:12px 26px;
-  border-radius:30px;
-  background:#00f5d4;
-  color:#000;
-  font-weight:600;
-  text-decoration:none;
-  transition:0.3s;
-}
-
-.project a:hover{
-  background:#ffd60a;
-  box-shadow:0 0 25px rgba(255,214,10,0.9);
-}
-
-/* ---------- FOOTER ---------- */
-footer{
-  text-align:center;
-  padding:30px;
-  color:#8a8a8a;
-}
-</style>
+  <meta charset="UTF-8">
+  <title>Uzma Kadampur | Software Tester</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-text">
-    <h1>Uzmaparveen <span>Kadampur</span></h1>
-    <p>Software Engineer & Software Tester (Fresher)</p>
-  </div>
+<!-- HEADER -->
+<header class="hero">
+  <h1 class="fade-in">Hi 👋 I’m <span>Uzma Kadampur</span></h1>
+  <p class="fade-in delay">
+    Aspiring <b>Software Tester (Manual & Automation)</b><br>
+    Passionate about finding bugs 🐞 and improving software quality
+  </p>
+</header>
 
-  <div class="dev">
-    <div class="head"></div>
-    <div class="body"></div>
-    <div class="laptop"></div>
-    <div class="table"></div>
-  </div>
-</section>
+<!-- SOFTWARE TESTING SKILLS -->
+<section class="section">
+  <h2>🧪 Software Testing Skills</h2>
 
-<!-- ABOUT -->
-<section>
-  <h2>About Me</h2>
-  <div class="about">
-    I am a fresher Software Engineer and Software Tester with a strong foundation in
-    programming, databases, and software testing concepts. I am passionate about
-    building reliable applications and ensuring quality through structured testing.
-  </div>
-</section>
+  <div class="card-container">
 
-<!-- SOFTWARE ENGINEERING -->
-<section>
-  <h2>Software Engineering</h2>
-  <div class="skill-grid">
-    <div class="skill"><i class="fa-brands fa-java"></i><p>Java</p></div>
-    <div class="skill"><i class="fa-brands fa-python"></i><p>Python</p></div>
-    <div class="skill"><i class="fa-solid fa-database"></i><p>SQL</p></div>
-    <div class="skill"><i class="fa-solid fa-database"></i><p>HTML</p></div>
-    <div class="skill"><i class="fa-solid fa-database"></i><p>CSS</p></div>
-    <div class="skill"><i class="fa-solid fa-database"></i><p>Javacsript</p></div>
-  </div>
-</section>
-
-<!-- SOFTWARE TESTING -->
-<section>
-  <h2>Software Testing</h2>
-  <div class="skill-grid">
-    <div class="skill"><i class="fa-solid fa-vial"></i><p>Manual Testing</p></div>
-    <div class="skill"><i class="fa-solid fa-clipboard-check"></i><p>Test Case Design</p></div>
-    <div class="skill"><i class="fa-solid fa-robot"></i><p>Automation testing (Selenium)</p></div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section>
-  <h2>Projects</h2>
-  <div class="projects">
-
-    <div class="project">
-      <h3>Task Focus Application</h3>
-      <p>Productivity-focused task management application.</p>
-      <a href="#">View Project</a>
+    <div class="card glow">
+      <i class="fa-solid fa-clipboard-check"></i>
+      <h3>Manual Testing</h3>
+      <p>
+        Requirement Analysis<br>
+        Test Scenarios & Test Cases<br>
+        Smoke, Sanity, Regression<br>
+             </p>
     </div>
 
-    <div class="project">
-      <h3>DemoQA Testing</h3>
-      <p>Manual and automation testing of DemoQA components.</p>
-      <a href="#">View Project</a>
+    <div class="card glow">
+      <i class="fa-solid fa-file-lines"></i>
+      <h3>Test Case Design</h3>
+      <p>
+        Positive & Negative Testing<br>
+        Boundary Value Analysis<br>
+        Equivalence Partitioning<br>
+      </p>
     </div>
 
-    <div class="project">
-      <h3>OpenCart Web Application Testing</h3>
-      <p>End-to-end testing of an e-commerce application.</p>
-      <a href="#">View Project</a>
+    <div class="card glow">
+      <i class="fa-solid fa-robot"></i>
+      <h3>Automation Testing</h3>
+      <p>
+        Selenium WebDriver<br>
+        Java with Selenium<br>
+        XPath & Locators<br>
+        TestNG Framework
+      </p>
     </div>
 
   </div>
 </section>
 
+<!-- TOOLS -->
+<section class="section dark">
+  <h2>⚙️ Tools & Technologies</h2>
+
+  <div class="tools">
+    <span>Java</span>
+    <span>Selenium</span>
+    <span>TestNG</span>
+    <span>JUnit</span>
+    <span>SQL</span>
+    <span>Git & GitHub</span>
+    <span>JIRA</span>
+    <span>Postman</span>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
-  © 2026 Uzmaparveen Kadampur
+  <p>📫 Connect with me on GitHub | © 2026 Uzma Kadampur</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
