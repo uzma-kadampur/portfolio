@@ -23,39 +23,57 @@ h1,h2{
 }
 
 p{
-  line-height:1.6;
   text-align:center;
+  line-height:1.6;
 }
 
-/* HEADER */
+/* HERO */
 .hero{
   padding:80px 8% 40px;
 }
-.hero h1 span{
+.hero span{
   color:#00ffd5;
 }
 
-/* ANIMATION */
-.animation-box{
+/* NEW TESTING ANIMATION */
+.testing-animation{
   display:flex;
-  flex-direction:column;
+  justify-content:center;
   align-items:center;
   margin:50px 0;
 }
-.pulse{
-  width:120px;
-  height:120px;
-  border-radius:50%;
-  border:3px solid #00ffd5;
-  animation:pulse 1.6s infinite;
+.scanner{
+  width:220px;
+  height:140px;
+  border:2px solid #00ffd5;
+  border-radius:10px;
+  position:relative;
+  overflow:hidden;
 }
-@keyframes pulse{
-  0%{transform:scale(.9);opacity:.6;}
-  50%{transform:scale(1.1);opacity:1;}
-  100%{transform:scale(.9);opacity:.6;}
+.scan-line{
+  position:absolute;
+  top:-20px;
+  width:100%;
+  height:20px;
+  background:rgba(0,255,213,0.4);
+  animation:scan 2.5s infinite;
+}
+@keyframes scan{
+  0%{top:-20px;}
+  50%{top:70px;}
+  100%{top:160px;}
+}
+.checks{
+  padding:20px;
+}
+.checks div{
+  margin:8px 0;
+}
+.checks span{
+  color:#00ffd5;
 }
 
-/* SKILLS CARDS */
+/* SKILLS */
 .cards{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -84,7 +102,6 @@ p{
   padding:12px 22px;
   border:1px solid #00ffd5;
   border-radius:30px;
-  cursor:pointer;
   animation:float 3s ease-in-out infinite;
 }
 .tech span:hover{
@@ -103,13 +120,24 @@ p{
   border-radius:12px;
   margin:15px 0;
   text-align:center;
+  transition:.4s;
+}
+.project:hover{
+  box-shadow:0 0 20px rgba(0,255,213,.4);
+}
+
+/* LINKS */
+a{
+  color:#00ffd5;
+  text-decoration:none;
+}
+a:hover{
+  text-decoration:underline;
 }
 
 /* CONTACT */
-.contact a{
-  color:#00ffd5;
-  text-decoration:none;
-  font-weight:bold;
+.contact{
+  text-align:center;
 }
 </style>
 </head>
@@ -121,20 +149,28 @@ p{
   <h1>Hi 👋 I’m <span>Uzmaparveen Kadampur</span></h1>
   <p>Aspiring Software Tester<br>Manual Testing & Selenium Automation</p>
 
-  <div class="animation-box">
-    <div class="pulse"></div>
-    <p>Testing in Progress...</p>
+  <!-- NEW ANIMATION -->
+  <div class="testing-animation">
+    <div class="scanner">
+      <div class="scan-line"></div>
+      <div class="checks">
+        <div><span>✔</span> Test Case Executed</div>
+        <div><span>✔</span> Bug Identified</div>
+        <div><span>✔</span> Regression Passed</div>
+      </div>
+    </div>
   </div>
+
+  <p>Testing in Progress...</p>
 </section>
 
-<!-- ABOUT ME -->
+<!-- ABOUT -->
 <section>
   <h2>🙋‍♀️ About Me</h2>
   <p>
-    I am an aspiring Software Tester with hands-on knowledge in
-    Manual Testing and Selenium Automation. I enjoy finding bugs,
-    improving software quality, and learning automation frameworks.
-    Actively building real-time testing projects to become industry ready.
+    I am an aspiring Software Tester with hands-on knowledge in Manual Testing
+    and Selenium Automation. I enjoy identifying defects, improving quality,
+    and building real-time testing projects to become industry ready.
   </p>
 </section>
 
@@ -156,7 +192,6 @@ p{
     </div>
   </div>
 
-  <!-- TECHNOLOGIES -->
   <div class="tech">
     <span>Java</span>
     <span>Selenium</span>
@@ -168,14 +203,22 @@ p{
 
 <!-- PROJECTS -->
 <section>
-  <h2>📁 Testing Projects</h2>
+  <h2>🔗 Testing Projects</h2>
 
   <div class="project">
-    <h3>DemoQA – Testing</h3>
+    <h3>
+      <a href="https://github.com/uzma-kadampur/demoqa-testing" target="_blank">
+        DemoQA – Testing
+      </a>
+    </h3>
   </div>
 
   <div class="project">
-    <h3>OpenCart – Web Application Testing</h3>
+    <h3>
+      <a href="https://github.com/uzma-kadampur/opencart-testing" target="_blank">
+        OpenCart – Web Application Testing
+      </a>
+    </h3>
   </div>
 </section>
 
